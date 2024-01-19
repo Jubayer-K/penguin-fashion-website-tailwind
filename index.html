@@ -1,17 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>Penguin Fashion Website</title>
+    <style>
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <div>
-            <h1 class="text-7xl "><span>BE THE PENGUINS</span> <br> OF WINTER</h1>
+
+<body class="font-roboto">
+    <header class="bg-[#FFFBF0] h-[815px] px-3 lg:mx-0">
+        <nav class="flex justify-between p-4 lg:p-11 lg:mx-40 items-center">
+            <div class="nav-logo"><img class="w-48 h-8" src="assets/icons/logo.png" alt=""></div>
+            <div class="navbar">
+                <ul class="list-none gap-14 font-medium text-base hidden lg:inline-flex text-[#3C3C3C]">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <img class="lg:hidden" src="assets/icons/hamburger.svg" alt="">
+            </div>
+        </nav>
+        <div class="banner-container flex flex-col lg:flex-row justify-around items-center gap-10">
+            <div class="space-y-2 ">
+                <h1 class="text-8xl font-bebas font-normal "><span class="text-[#FABE4C]">BE THE PENGUINS</span> <br> OF
+                    WINTER</h1>
+                <p class="text-base text-[#3C3C3C]">Lorem Ipsum is simply dummy text of the printing
+                    and typesetting industry.</p>
+                <button
+                    class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                    <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+            </div>
+            <div class="banner-img"><img class="lg:w-[549px] w-[361px] h-[367px] lg:h-[559px]"
+                    src="assets/images/model.png" alt="smiling female model">
+            </div>
         </div>
     </header>
-    
+    <main>
+        <section class="woman-section">
+            <h2
+                class="title-women font-bebas text-5xl font-normal text-[#363958] text-center lg:text-start m-0 pt-20 lg:pt-12 lg:pb-10 lg:pl-96">
+                WOMAN JACKET</h2>
+            <div class="card-container flex lg:flex-row flex-col gap-8 justify-center">
+                <div class="card-wrapper lg:w-[370px] lg:h-[550px] space-y-3 shadow-lg rounded-3xl p-5">
+                    <div class="card-img w-80 h-80 bg-[#F1F1F1] rounded-3xl items-center">
+                        <img class="w-72 h-72 m-auto p-5 pb-3" src="assets/images/jacket-1.png"
+                            alt="yellow women's jacket">
+                    </div>
+                    <h4 class="text-2xl font-bold text-[#363958]">Yellow Coat Jacket</h4>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-bottom flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                            <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="card-wrapper lg:w-[370px] lg:h-[550px] space-y-3 shadow-lg rounded-3xl p-5">
+                    <div class="card-img w-80 h-80 bg-[#F1F1F1] rounded-3xl items-center">
+                        <img class="w-72 h-72 m-auto p-5 pb-3" src="assets/images/jacket-2.png"
+                            alt="yellow women's jacket">
+                    </div>
+                    <h4 class="text-2xl font-bold text-[#363958]">Ladies Jacket</h4>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-bottom flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                            <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="card-wrapper lg:w-[370px] lg:h-[550px] space-y-3 shadow-lg rounded-3xl p-5">
+                    <div class="card-img w-80 h-80 bg-[#F1F1F1] rounded-3xl items-center">
+                        <img class="w-72 h-72 m-auto p-5 pb-3" src="assets/images/jacket-3.png"
+                            alt="yellow women's jacket">
+                    </div>
+                    <h4 class="text-2xl font-bold text-[#363958]">Woman Leather Jacket</h4>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-bottom flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                            <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="man-section">
+            <h2
+                class="title-men font-bebas text-5xl font-normal text-[#363958] text-center lg:text-start m-0 pt-20 lg:pt-12 lg:pb-10 lg:pl-96">
+                MAN JACKET</h2>
+            <div class="card-container flex lg:flex-row flex-col gap-8 justify-center">
+                <div class="card-wrapper lg:w-[370px] lg:h-[550px] space-y-3 shadow-lg rounded-3xl p-5">
+                    <div class="card-img w-80 h-80 bg-[#F1F1F1] rounded-3xl items-center">
+                        <img class="w-72 h-72 m-auto p-5 pb-3" src="assets/images/jacket-4.png"
+                            alt="yellow women's jacket">
+                    </div>
+                    <h4 class="text-2xl font-bold text-[#363958]">Snowboard Jacket Mens</h4>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-bottom flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                            <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="card-wrapper lg:w-[370px] lg:h-[550px] space-y-3 shadow-lg rounded-3xl p-5">
+                    <div class="card-img w-80 h-80 bg-[#F1F1F1] rounded-3xl items-center">
+                        <img class="w-72 h-72 m-auto p-5 pb-3" src="assets/images/jacket-5.png"
+                            alt="yellow women's jacket">
+                    </div>
+                    <h4 class="text-2xl font-bold text-[#363958]">Man Leather Jackets</h4>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-bottom flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                            <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+                    </div>
+                </div>
+                <div class="card-wrapper lg:w-[370px] lg:h-[550px] space-y-3 shadow-lg rounded-3xl p-5">
+                    <div class="card-img w-80 h-80 bg-[#F1F1F1] rounded-3xl items-center">
+                        <img class="w-72 h-72 m-auto p-5 pb-3" src="assets/images/jacket-6.png"
+                            alt="yellow women's jacket">
+                    </div>
+                    <h4 class="text-2xl font-bold text-[#363958]">Man Casual Jackets</h4>
+                    <p>Lorem Ipsum is simply dummy text of the
+                        printing and typesetting industry.</p>
+                    <div class="card-bottom flex justify-between">
+                        <h2 class="text-[#FABE4C] text-4xl font-black">$234</h2>
+                        <button
+                            class="lg:items-end bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white text-base font-semibold py-4 px-8 h-14 flex rounded-[10px] gap-2">
+                            <img class="h-6 w-6" src="assets/icons/shopping-cart.png" alt="cart icon">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service-section flex flex-col-reverse lg:flex-row justify-center gap-24 pt-36 items-center">
+            <div class="service-card-container space-y-4">
+                <div class="service-card-wrapper flex flex-col lg:flex-row gap-4 items-center lg:w-[489px] lg:h-36 rounded-3xl shadow-lg p-7">
+                    <div>
+                        <img class="w-20" src="assets/icons/house.png" alt="">
+                    </div>
+                    <div class="px-5 space-y-3 text-center lg:text-start lg:space-y-0">
+                        <h3 class="text-[#363958] text-2xl font-bold">Find the Perfect Fit</h3>
+                        <p class="text-[#3E3E3E] text-base font-normal">Everybody is different, which is why we
+                            offer styles for every body.</p>
+                    </div>
+                </div>
+                <div class="service-card-wrapper flex flex-col lg:flex-row items-center lg:w-[489px] lg:h-36 rounded-3xl shadow-lg p-7">
+                    <div>
+                        <img class="w-20" src="assets/icons/house.png" alt="">
+                    </div>
+                    <div class="px-5 space-y-3 text-center lg:text-start lg:space-y-0">
+                        <h3 class="text-[#363958] text-2xl font-bold">Free Exchanges</h3>
+                        <p class="text-[#3E3E3E] text-base font-normal">One of the many reasons you can shop
+                            with peace of mind.</p>
+                    </div>
+                </div>
+                <div class="service-card-wrapper flex flex-col lg:flex-row items-center lg:w-[489px] lg:h-36 rounded-3xl shadow-lg p-7">
+                    <div>
+                        <img class="w-20" src="assets/icons/house.png" alt="">
+                    </div>
+                    <div class="px-5 space-y-3 text-center lg:text-start lg:space-y-0">
+                        <h3 class="text-[#363958] text-2xl font-bold">Contact Our Seller</h3>
+                        <p class="text-[#3E3E3E] text-base font-normal">They are here to help you. That's quite
+                            literally what we pay them for.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-img"><img class="lg:w-[600px] lg:h-[370px] w-80" src="assets/images/shopping.png" alt=""></div>
+        </section>
+    </main>
+
 </body>
+
 </html>
